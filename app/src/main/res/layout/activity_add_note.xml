@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="12dp"
+              tools:context=".AddNoteActivity">
+
+    <EditText
+            android:id="@+id/edit_text"
+            android:focusable="true"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:gravity="start|top"
+            android:padding="4dp"
+            android:textColor="#1e1e1e" />
+
+    <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/btn_high"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="高" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/btn_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="中" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/btn_low"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="低" />
+
+    </RadioGroup>
+
+    <Button
+            android:id="@+id/btn_add"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:text="确认" />
+</LinearLayout>

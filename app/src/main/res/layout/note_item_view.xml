@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/itemLinear"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <CheckBox
+            android:id="@+id/cb_finishCheckBox"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="top"
+    />
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:id="@+id/tv_contentText"
+                android:textSize="20sp"
+                android:text="test"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+        />
+
+        <TextView
+                android:id="@+id/tv_dateText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:gravity="start"
+
+        />
+
+    </LinearLayout>
+
+    <ImageButton
+            android:id="@+id/ib_deleteButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="delete"
+            android:background="@android:color/transparent"
+            android:src="@android:drawable/ic_delete"/>
+
+
+
+</LinearLayout>
